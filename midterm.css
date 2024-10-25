@@ -1,0 +1,436 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2f3677;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Section */
+.header {
+    position: relative;
+    background: url('me.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.header p {
+    font-size: 1.5rem;
+}
+
+/* Main Content Section */
+.content-section {
+    padding: 60px 20px;
+    background-color: #7de5e5;
+    scroll-behavior: smooth;
+}
+
+.content-box {
+    font-family: 'Georgia', serif;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    margin: 0 auto;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+/* Number overlay on the content box */
+.content-number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #bfa05e;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #bfa05e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e6ac00;
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Center and size the image in Section 1 */
+.content-image1-wrapper {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content-image1 {
+    
+    width: 230%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Education Section Styling */
+.content-image1-wrapper {
+    font-family: 'Georgia', serif;
+    position: relative; /* Allows positioning of the overlay */
+    max-width: 100%; /* Ensures the wrapper doesn't exceed the container's width */
+    margin: 0 auto; /* Centers the wrapper */
+    overflow: hidden; /* Hides overflow to maintain rounded corners */
+}
+
+.content-image {
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Round corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.content-image:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px; /* Match the image's border radius */
+    color: white; /* Adjust text color for visibility */
+    text-align: center; /* Center text */
+}
+
+.overlay h2 {
+    font-size: 2rem; /* Larger font size for visibility */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.overlay p {
+    font-size: 1rem; /* Slightly smaller font size for the paragraph */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+a{
+    text-decoration: none;
+}
+/* Container for alternating images and descriptions */
+.image-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Right-aligned image and left-aligned description */
+.image-container.right {
+    flex-direction: row;
+}
+
+/* Left-aligned image and right-aligned description */
+.image-container.left {
+    flex-direction: row-reverse;
+}
+
+/* Image styling remains consistent */
+/* Adjusted image size for a smaller appearance */
+.image-container .content-image {
+    width: 30%; /* Reduced from 50% to 40% */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+
+/* Description styling */
+.image-description {
+    width: 50%;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hover effect for images remains */
+.content-image:hover {
+    transform: scale(1.05);
+}
+.skills-set{
+
+    line-clamp: fixed;
+    stroke-dashoffset: 0ch;
+    scroll-padding: 10px;
+
+}
+.skills-container {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly */
+    flex-wrap: wrap; /* Allow items to wrap */
+    margin-top: 20px;
+}
+
+.skill-item {
+    background-color: #fff; /* White background for each skill item */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin: 10px; /* Add some space between skill items */
+    flex-basis: 30%; /* Allow for 3 items per row, adjust as necessary */
+}
+
+.skill-item i {
+    font-size: 2rem; /* Adjust the icon size */
+    color: #FFC107; /* Icon color */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+
+.skill-image {
+    width: 60px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+}
+/* contact */
+.contact-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and image */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.contact-info {
+    flex-basis: 60%; /* Take 60% of the width */
+    text-align: left; /* Align text to the left */
+}
+
+.contact-image {
+    flex-basis: 30%; /* Take 30% of the width */
+    text-align: center; /* Center the image */
+}
+
+.contact-photo {
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.contact-info p {
+    font-size: 1.2rem; /* Increase font size for readability */
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+.contact-info a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark color for links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.contact-info i {
+    margin-right: 8px; /* Space between icon and text */
+    color: #FFC107; /* Icon color */
+}
+/* for image in photography */
+.photography-images {
+    display: flex;
+    justify-content: center; /* Center images */
+    margin-top: 10px; /* Space above the images */
+    gap: 10px; /* Space between images */
+}
+
+.photography-image {
+    width: 80px; /* Width of the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: round the corners */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+/* for programming part */
+.programming-details {
+    display: flex;
+    justify-content: space-between; /* Space out the details */
+    margin-top: 10px; /* Space above the details */
+}
+
+.programming-languages,
+.programming-tools,
+.programming-strengths {
+    flex: 1; /* Make sections equal width */
+    background-color: #f0f8f8; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding for spacing */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin: 0 10px; /* Space between sections */
+}
+
+.programming-languages h4,
+.programming-tools h4,
+.programming-strengths h4 {
+    font-size: 1.2rem; /* Slightly larger font for headers */
+    color: #333; /* Darker text color for contrast */
+}
+
+.programming-languages ul,
+.programming-tools ul {
+    padding-left: 0; /* Remove padding for icons */
+}
+
+.programming-languages li,
+.programming-tools li {
+    display: flex; /* Flexbox for icon and text alignment */
+    align-items: center; /* Center items vertically */
+    margin: 5px 0; /* Space between list items */
+}
+
+.programming-strengths p {
+    margin-top: 5px; /* Space above the paragraph */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Icon styling */
+.programming-languages i,
+.programming-tools i,
+.programming-strengths i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #FFC107; /* Change icon color if needed */
+    font-size: 1.2rem; /* Adjust icon size */
+}
+/* for graphic design */
+/* Section Container */
+.graphic-design-example {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.graphic-design-example h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Graphic Item with Hover Effect */
+.graphic-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.graphic-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay Effect */
+.graphic-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Hover Effect for the Graphic Item */
+.graphic-item:hover {
+    transform: scale(1.05);
+}
+
+.graphic-item:hover .graphic-overlay {
+    opacity: 1;
+}
